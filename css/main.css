@@ -1,0 +1,178 @@
+/*------------------------------------------------------------
+Final Project:	WedDev2
+
+Monica Torres
+
+Content
+1. General Styles
+2. Header Styles
+3. Main Content Styles
+	3.1 Sidebar
+4. Footer Styles
+5. Media Queries
+
+Colors:
+        Oxford Blue: #11213c
+        Tyrian purple: #610333
+        Lion: #C79A71
+        Teal: #137B8E
+
+Font Family:
+			font-family: 'Amarante', cursive;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Nanum Gothic', sans-serif;
+
+------------------------------------------------------------*/
+
+/*
+*			1. General Styles
+------------------------------------------------------------*/
+
+* {                         
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Amarante', cursive;
+}
+
+title, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', sans-serif;
+}
+
+p {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+/*
+*			2. Header Styles
+------------------------------------------------------------*/
+.background-image {
+	background-image: url('../images/banner1000_x_800.JPG');
+	background-color: #9f9f9f;
+	background-blend-mode: overlay;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+    display: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h3 {
+    color:#C79A71;
+}
+
+.main-title {
+    text-align: center;
+    width: 100%;
+    padding: 10rem;
+}
+
+/*
+*			2.1 Navigation Styles
+------------------------------------------------------------*/
+.logo {
+    width: 15%;
+    height: auto;
+}
+
+.bg-nav-mt {
+    background-color: #11213c;
+    font-size: 1.1rem;
+}
+
+a, .nav-link {
+    color: #C79A71;
+}
+
+/* Set the border color */
+         
+.custom-toggler .navbar-toggler {
+    border-color: #137B8E;
+}
+
+
+
+
+
+/*
+*			3. Main Content Styles
+------------------------------------------------------------*/
+
+
+
+
+
+/*
+*			3.2 ABOUT.HTML - Main Content Styles
+------------------------------------------------------------*/
+.about-grid-container {
+    display: grid;
+    grid-template-areas: 
+    'title title'
+    'andrea jacob'
+    'description description'
+    'title-projects title-projects'
+    'carousel carousel';
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.about-title {grid-area: title; }
+.about-andrea {
+    grid-area: andrea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-andrea > img {
+    width: 20%;
+    height: auto;
+} 
+.about-jacob {grid-area: jacob;}
+.about-description {grid-area: description;}
+.about-title-projects {grid-area: title-projects;}
+.about-carousel {grid-area: carousel;}
+.about-carousel > .carousel-item
+{
+    transition: transform 1s ease, opacity .5s ease-out
+}
+
+/*
+*			3.3 CONTACT.HTML - Main Content Styles
+------------------------------------------------------------*/
+.contact-grid-container {
+    display: grid;
+    grid-template-areas:
+    'main-image main-image',
+    'description contact-form';
+}
+
+textarea #message {
+    height: 200px;
+}
+
+
+.social-icons {
+    font-size: 1rem;
+    color: #11213c;
+}
+/*
+*			4. Footer Styles
+------------------------------------------------------------*/
+#footercito {
+    background-color: #610333;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+    color: #C79A71;
+}
+
+
+/*
+*			5. Media Queries
+------------------------------------------------------------*/
