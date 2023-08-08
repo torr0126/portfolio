@@ -1,28 +1,3 @@
-/*------------------------------------------------------------
-Final Project:	WedDev2
-
-Monica Torres
-
-Content
-1. General Styles
-2. Header Styles
-3. Main Content Styles
-	3.1 Sidebar
-4. Footer Styles
-5. Media Queries
-
-Colors:
-        Oxford Blue: #11213c
-        Tyrian purple: #610333
-        Lion: #C79A71
-        Teal: #137B8E
-
-Font Family:
-			font-family: 'Amarante', cursive;
-            font-family: 'Kanit', sans-serif;
-            font-family: 'Nanum Gothic', sans-serif;
-
-------------------------------------------------------------*/
 
 /*
 *			1. General Styles
@@ -45,22 +20,37 @@ p {
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
+.form-btn {
+    background-color: #C79A71;
+    border: none;
+    color:#11213c;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
 
+}
 
 /*
 *			2. Header Styles
 ------------------------------------------------------------*/
 .background-image {
-	background-image: url('../images/banner1000_x_800.JPG');
-	background-color: #9f9f9f;
-	background-blend-mode: overlay;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #C79A71;
+  }
 
-    display: column;
-    align-items: center;
-    justify-content: center;
+.title-image {
+    width: 100%;
+    height: 300px;
+}
+
+.main-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h1, h3 {
@@ -70,7 +60,7 @@ h1, h3 {
 .main-title {
     text-align: center;
     width: 100%;
-    padding: 10rem;
+    /* padding: 10rem; */
 }
 
 /*
@@ -101,7 +91,7 @@ a, .nav-link {
 
 
 /*
-*			3. Main Content Styles
+*			3. INDEX.HTML - Main Content Styles
 ------------------------------------------------------------*/
 
 
@@ -111,19 +101,8 @@ a, .nav-link {
 /*
 *			3.2 ABOUT.HTML - Main Content Styles
 ------------------------------------------------------------*/
-.about-grid-container {
-    display: grid;
-    grid-template-areas: 
-    'title title'
-    'andrea jacob'
-    'description description'
-    'title-projects title-projects'
-    'carousel carousel';
-    gap: 1rem;
-    padding: 0.5rem;
-}
+/* .about-title {grid-area: title; }
 
-.about-title {grid-area: title; }
 .about-andrea {
     grid-area: andrea;
     display: flex;
@@ -134,10 +113,21 @@ a, .nav-link {
     width: 20%;
     height: auto;
 } 
-.about-jacob {grid-area: jacob;}
+
+.about-jacob {
+    grid-area: jacob;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-jacob > img {
+    width: 20%;
+    height: auto;
+} 
+
 .about-description {grid-area: description;}
 .about-title-projects {grid-area: title-projects;}
-.about-carousel {grid-area: carousel;}
+.about-carousel {grid-area: carousel;} */
 .about-carousel > .carousel-item
 {
     transition: transform 1s ease, opacity .5s ease-out
@@ -146,12 +136,16 @@ a, .nav-link {
 /*
 *			3.3 CONTACT.HTML - Main Content Styles
 ------------------------------------------------------------*/
-.contact-grid-container {
+/* .contact-grid-container {
     display: grid;
     grid-template-areas:
-    'main-image main-image',
+    'banner banner',
     'description contact-form';
-}
+} */
+
+/* .contact-banner {grid-area: banner;}
+.contact-description {grid-area: description;}
+.contact-contact-form {grid-area: contact-form;} */
 
 textarea #message {
     height: 200px;
